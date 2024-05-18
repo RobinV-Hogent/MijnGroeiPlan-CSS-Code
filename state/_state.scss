@@ -1,0 +1,22 @@
+.tabview__tab.is-selected {
+    background-color: rgb(167 139 250);
+    &:hover {
+        background-color: rgb(139 92 246);
+    }
+}
+
+.plan-card__action-list.is-completed {
+    display: none;
+}
+
+.form-field__property-name.is-error {
+    border-width: 1px;
+    border-color: #ef4444;
+}
+
+.header-and-content__header.is-subtitle {
+    font-size: 36px;
+    line-height: 40px;
+}
+
+

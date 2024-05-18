@@ -1,0 +1,76 @@
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0 0 1.5rem;
+    padding: 0 0 0 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+blockquote {
+    margin: 0 0 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 0.25rem solid #ccc;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+th,
+td {
+    padding: 0.75rem;
+}
+
+th {
+    font-weight: bold;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+code,
+pre {
+    font-family: "Courier New", Courier, monospace;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+pre {
+    overflow-x: auto;
+    padding: 1rem;
+}
