@@ -1,0 +1,19 @@
+.info-card {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    flex-direction: row;
+    gap: 0.75rem;
+    border-radius: 0.75rem;
+    border-width: 2px;
+    border-color: rgb(59, 130, 246);
+    width: fit-content;
+    background-color: #ffffff;
+
+    .message {
+        font-weight: 700;
+        color: rgb(59, 130, 246);
+    }
+}

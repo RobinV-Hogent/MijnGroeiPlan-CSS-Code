@@ -1,0 +1,35 @@
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    > .property-name {
+        font-weight: 700;
+
+        &.-sub {
+            color: rgb(148 163 184);
+        }
+
+        &.-error {
+            border-width: 1px;
+            border-color: #ef4444;
+        }
+    }
+
+    &.-expand {
+        flex: 1;
+    }
+
+    &.-languages {
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    > .radio {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}

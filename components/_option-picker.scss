@@ -1,0 +1,15 @@
+.option-picker {
+    display: flex;
+    flex-direction: column;
+
+    > .description {
+        font-size: 18px;
+        line-height: 28px;
+        color: rgb(148 163 184);
+        margin-bottom: 8px;
+    }
+
+    > .items {
+        width: fit-content;
+    }
+}

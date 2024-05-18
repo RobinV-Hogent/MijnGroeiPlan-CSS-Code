@@ -1,0 +1,18 @@
+.quickpanel-option-active-plans {
+    list-style-type: disc;
+    flex: 1;
+
+    > .activeplan {
+        display: list-item;
+        margin-bottom: 0.5rem;
+        background-color: white;
+    }
+
+
+    .activeplanlink {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        font-weight: 700;
+    }
+
+}

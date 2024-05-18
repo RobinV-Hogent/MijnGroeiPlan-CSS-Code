@@ -1,0 +1,53 @@
+.tab-view {
+    > .tablist {
+        display: flex;
+        padding: 0.5rem;
+        gap: 0.5rem;
+        width: 100%;
+        background-color: white;
+        border-radius: 0.5rem + 0.5rem;
+
+        > .tab {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 300ms;
+            transition-duration: 200ms;
+            cursor: pointer;
+            user-select: none;
+            background-color: rgb(148 163 184);
+
+            &:hover {
+                background-color: rgb(100 116 139);
+            }
+
+            > .tabname {
+                font-weight: 700;
+                color: #ffffff;
+            }
+
+            &.-selected {
+                background-color: rgb(167 139 250);
+
+                &:hover {
+                    background-color: rgb(139 92 246);
+                }
+            }
+        }
+
+    }
+
+    > .contentarea {
+        padding: 1.25rem;
+        margin-top: 2.5rem;
+        box-shadow: var(0px 0px 10px 0px rgba(0, 0, 0, 0.1));
+        background-color: white;
+        border-radius: 0.5rem;
+        max-width: 100%;
+        width: 100%;
+        margin: 2.5rem 0rem;
+        overflow: hidden;
+        border: 4px solid #a78bfa;
+    }
+}

@@ -1,0 +1,10 @@
+.action-list-item {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+
+    &.-done {
+        gap: 0.5rem;
+    }
+}

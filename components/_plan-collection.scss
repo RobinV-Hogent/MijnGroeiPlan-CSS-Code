@@ -1,0 +1,27 @@
+.plan-collection {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    > .title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+        transition-duration: 100ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+
+        color: rgb(100 116 139);
+
+        &:hover {
+            color: rgb(59 130 246);
+        }
+    }
+
+    > .cards {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1.25rem;
+
+        @media (min-width: 1536px) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+}

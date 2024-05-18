@@ -1,0 +1,87 @@
+@mixin action-button-variant($bg-color, $text-color: black) {
+    $light-color: mix(white, $bg-color, 5%);
+    $dark-color: mix(black, $bg-color, 5%);
+
+    background-color: $light-color;
+    color: $text-color;
+    border: 3px solid $light-color;
+
+    &:hover {
+        background-color: $dark-color;
+        border-color: $dark-color;
+    }
+
+    &:hover i.fa-circle-quarter {
+        transform: rotate(-45deg);
+    }
+}
+
+@mixin action-button-transparent-variant($bg-hover, $text-color: black) {
+    $dark-color: mix(black, $bg-hover, 5%);
+
+    background-color: transparent;
+    border: 3px solid $bg-hover;
+    color: $text-color;
+
+    &:hover {
+        background-color: $dark-color;
+        border-color: $dark-color;
+    }
+
+    &:hover i.fa-circle-quarter {
+        transform: rotate(-45deg);
+    }
+}
+
+.action-button {
+    background-color: lightgray;
+    color: black;
+    border: 3px solid lightgray;
+
+    padding: 8px 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 9999px;
+
+    width: auto;
+    flex-shrink: auto;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.-blue {
+        @include action-button-variant(rgb(96 165 250), white);
+
+        &-transparent {
+            @include action-button-transparent-variant(rgb(96 165 250), black);
+        }
+    }
+
+    &.-yellow {
+        @include action-button-variant(rgb(252 211 77));
+
+        &-transparent {
+            @include action-button-transparent-variant(rgb(252 211 77), black);
+        }
+    }
+
+    &.-purple {
+        @include action-button-variant(rgb(139 92 246), white);
+
+        &-transparent {
+            @include action-button-transparent-variant(rgb(139 92 246), black);
+        }
+    }
+
+    i.fa-circle-quarter {
+        transform: rotate(135deg);
+        transition: all 0.5s ease;
+        width: 9px;
+        height: 9px;
+    }
+}
