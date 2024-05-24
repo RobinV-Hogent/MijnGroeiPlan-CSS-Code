@@ -1,0 +1,55 @@
+@use "../hulpmiddelen/hulpmiddelen" as *;
+@use "../instellingen/variabelen" as *;
+
+.action-button {
+    background-color: lightgray;
+    color: black;
+    border: 3px solid lightgray;
+
+    padding: 8px 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 9999px;
+
+    width: auto;
+    flex-shrink: auto;
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--blue {
+        @include action-button-variant($button-blue, white);
+
+        &-transparent {
+            @include action-button-transparent-variant($button-blue, black);
+        }
+    }
+
+    &--yellow {
+        @include action-button-variant($button-yellow);
+
+        &-transparent {
+            @include action-button-transparent-variant($button-yellow, black);
+        }
+    }
+
+    &--purple {
+        @include action-button-variant($button-purple, white);
+
+        &-transparent {
+            @include action-button-transparent-variant($button-purple, black);
+        }
+    }
+
+    i.fa-circle-quarter {
+        transform: rotate(135deg);
+        transition: all 0.5s ease;
+        width: 9px;
+        height: 9px;
+    }
+}

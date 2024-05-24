@@ -1,0 +1,26 @@
+@use "../instellingen/variabelen" as *;
+
+.quickpanel-option {
+    flex: 1 1 0%;
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 16px;
+
+    &__title {
+        width: 100%;
+        font-size: $font-size-medium;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+}

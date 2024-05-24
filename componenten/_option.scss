@@ -1,0 +1,17 @@
+@use "../instellingen/variabelen" as *;
+
+.option {
+    display: flex;
+    flex-direction: column;
+
+    &__description {
+        font-size: $font-size-medium;
+        line-height: 28px;
+        color: $light-gray;
+        margin-bottom: 8px;
+    }
+
+    &__items {
+        width: fit-content;
+    }
+}

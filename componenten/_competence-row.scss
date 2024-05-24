@@ -1,0 +1,26 @@
+@use "../instellingen/variabelen" as *;
+
+.competence-row {
+    height: 50px;
+    position: relative;
+    text-align: left;
+
+    border-bottom: $row-separator;
+
+    &:last-child {
+        padding-bottom: 20px;
+        border-bottom: none;
+    }
+
+    &__value {
+        padding: 15px 20px;
+
+        &:first-child {
+            width: 58.333333%;
+        }
+
+        &:last-child {
+            float: right;
+        }
+    }
+}

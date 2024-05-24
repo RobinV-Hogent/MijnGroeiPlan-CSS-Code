@@ -1,0 +1,12 @@
+.overview-filter {
+    display: flex;
+
+    &__button-filters {
+        flex: 1;
+    }
+
+    &__search-input {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}

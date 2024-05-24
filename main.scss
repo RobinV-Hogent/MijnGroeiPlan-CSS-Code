@@ -1,0 +1,11 @@
+// Standaard opdeling CSS-methodologie ITCSS
+@use "./instellingen/variabelen";
+@use "./hulpmiddelen/hulpmiddelen";
+@use "./algemeen/algemeen";
+@use "./elementen/elementen";
+@use "./objecten/objecten";
+@use "./componenten/componenten";
+@use "./utilities/utilities";
+
+// Extra toevoeging van een layout categorie
+@use "./layout/layout";

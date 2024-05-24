@@ -1,0 +1,92 @@
+@use "../instellingen/variabelen" as *;
+
+.plan-card {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    &__body {
+        flex: 1 1 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        color: #000000;
+        padding: 1.25rem;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    &__stats {
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: $font-size-small-medium;
+        line-height: 1.75rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__info-list {
+        &-info {
+            font-weight: 700;
+        }
+    }
+
+    &__action-list {
+        padding-top: 8px;
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__link {
+        display: flex;
+        // justify-content: center;
+        // align-items: center;
+        text-align: center;
+        width: 2.5rem;
+        background-color: #60a5fa;
+        transition-duration: 150ms;
+        transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        cursor: pointer;
+
+        position: relative;
+
+        &-icon {
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: $font-size-default;
+
+            width: 20px;
+            aspect-ratio: 1/1;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translateX(-50%) rotate(-45deg) scale(1.5);
+
+            &::before {
+                width: 9px !important;
+                height: 9px !important;
+            }
+
+            &:hover {
+                transform: translateX(-50%) rotate(135deg) scale(1.5);
+            }
+        }
+    }
+}

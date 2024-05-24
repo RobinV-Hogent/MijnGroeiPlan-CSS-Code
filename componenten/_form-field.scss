@@ -1,0 +1,37 @@
+@use "../instellingen/variabelen" as *;
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__property-name {
+        font-weight: 700;
+
+        &--sub {
+            color: $light-gray;
+        }
+
+        &--error {
+            border-width: 1px;
+            border-color: #ef4444;
+        }
+    }
+
+    &--expand {
+        flex: 1;
+    }
+
+    &--languages {
+        @media (min-width: $screen-medium) {
+            flex-direction: row;
+        }
+    }
+
+    &__radio {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}

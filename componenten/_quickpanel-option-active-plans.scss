@@ -1,0 +1,18 @@
+@use "../instellingen/variabelen" as *;
+
+.quickpanel-option-active-plans {
+    list-style-type: disc;
+    flex: 1;
+
+    &__active-plan {
+        display: list-item;
+        margin-bottom: 0.5rem;
+        background-color: white;
+    }
+
+    &__active-plan-link {
+        font-size: $font-size-small-medium;
+        line-height: 1.75rem;
+        font-weight: 700;
+    }
+}
